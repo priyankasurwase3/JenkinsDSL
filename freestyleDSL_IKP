@@ -4,7 +4,7 @@ description ('This job is to create a seed job')
 def gitURL='https://github.com/priyankasurwase3/JenkinsDSL.git'
 parameters{
 stringParam('ENV','sct','select env to deploy')
-booleanParam('FLAG','true','select the flag')
+booleanParam('FLAG',true,'select the flag')
 choiceParam('OPTION',['OP1(default)','OP2','select option'])
 }
 scm{
@@ -13,7 +13,7 @@ scm{
   name('SHPrepo')
   url(gitURL)
   }
-branch('feature')
+branch('main')
 }
 } 
 
