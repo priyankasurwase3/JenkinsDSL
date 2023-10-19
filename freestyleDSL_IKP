@@ -28,8 +28,9 @@ displayName('IKP')
 description('Folder for ikp mule')
 } 
 dsl{
-external('test.groovy')
-lookupStrategy('SEED_JOB')
+external('test.groovy')      //Reads Job DSL scripts from the job's workspace.
+lookupStrategy('SEED_JOB')   //Chooses the lookup strategy for relative job names. Must be either 'JENKINS_ROOT' (default) or 'SEED_JOB'.
+
 }
 }
 }
