@@ -13,6 +13,7 @@ scm{
   name(SHPrepo)
   url(gitURL)
   }
+branch(main)
 }
 } 
 steps {
