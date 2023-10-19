@@ -1,3 +1,6 @@
+/* First This freestyleDSL_IKP will create a seed job named 'createSeed' and the folders MULE and a under MULE a IKP folder as a subfolder.
+Also it will execute dsl script named 'testSeed.grrovy' and create another subfolder of MULE named AWS.
+*/
 job('createSeed') {
 description ('This job is to create a seed job')
 
@@ -20,7 +23,7 @@ branch('feature')
 
 steps {
 folder ('mule'){
-displayName('Mule')
+displayName('MULE')
 description('Folder for mule')
 }
 folder ('mule/ikp'){
@@ -28,7 +31,7 @@ displayName('IKP')
 description('Folder for ikp mule')
 } 
 dsl{
-external('test.groovy')      //Reads Job DSL scripts from the job's workspace.
+external('testSeed.groovy')      //Reads Job DSL scripts from the job's workspace.
 lookupStrategy('SEED_JOB')   //Chooses the lookup strategy for relative job names. Must be either 'JENKINS_ROOT' (default) or 'SEED_JOB'.
 
 }
