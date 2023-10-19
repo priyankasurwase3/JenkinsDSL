@@ -13,7 +13,7 @@ scm{
   name('SHPrepo')
   url(gitURL)
   }
-branch('main')
+branch('feature')
 }
 } 
 
