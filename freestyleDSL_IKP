@@ -19,11 +19,11 @@ branch('main')
 
 
 steps {
-folder (mule){
+folder ('mule'){
 displayName('Mule')
 description('Folder for mule')
 }
-folder (mule/ikp)
+folder ('mule/ikp')
 displayName('IKP')
 description('Folder for ikp mule')
 }
