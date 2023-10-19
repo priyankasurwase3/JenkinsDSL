@@ -1,7 +1,7 @@
 job('createSeed') {
 description ('This job is to create a seed job')
 
-def gitURL=''
+def gitURL='https://github.com/priyankasurwase3/JenkinsDSL.git'
 parameters{
 stringParam('ENV','sct','select env to deploy')
 booleanParam('FLAG','true','select the flag')
