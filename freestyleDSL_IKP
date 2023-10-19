@@ -27,5 +27,5 @@ folder ('mule/ikp')
 displayName('IKP')
 description('Folder for ikp mule')
 }
-
+lookupStrategy('SEED_JOB')
 }
