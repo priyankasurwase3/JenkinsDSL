@@ -28,6 +28,7 @@ displayName('IKP')
 description('Folder for ikp mule')
 } 
 dsl{
+external('test.groovy')
 lookupStrategy('SEED_JOB')
 }
 }
