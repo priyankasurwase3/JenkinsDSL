@@ -4,6 +4,6 @@ job('test') {
      displayName('AWS')
      description('This is aws folder')
    }
-  shell ('echo wohoo finally successful')
+  shell('echo wohoo finally successful')
  }
 }
