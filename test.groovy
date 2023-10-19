@@ -1,8 +1,8 @@
 job('test'){
  steps {
-   folder('Kong') {
-     displayName('KONG')
-     description('This is kong folder')
+   folder('Mule/aws') {
+     displayName('AWS')
+     description('This is aws folder')
    }
  }
 }
