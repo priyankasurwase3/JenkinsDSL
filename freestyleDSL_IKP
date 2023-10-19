@@ -10,12 +10,14 @@ choiceParam('OPTION',['OP1(default)','OP2','select option'])
 scm{
  git {
   remote {
-  name(SHPrepo)
+  name('SHPrepo')
   url(gitURL)
   }
 branch('main')
 }
 } 
+
+
 steps {
 folder (mule){
 displayName('Mule')
