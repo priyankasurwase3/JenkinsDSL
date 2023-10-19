@@ -1,0 +1,28 @@
+job('createSeed') {
+description ('This job is to create a seed job')
+
+def gitURL=''
+parameters{
+stringParam('ENV','sct','select env to deploy')
+booleanParam('FLAG','true','select the flag')
+choiceParam('OPTION',['OP1(default)','OP2','select option'])
+}
+scm{
+ git {
+  remote {
+  name(SHPrepo)
+  url(gitURL)
+  }
+}
+} 
+steps {
+folder (mule){
+displayName('Mule')
+description('Folder for mule')
+}
+folder (mule/ikp)
+displayName('IKP')
+description('Folder for ikp mule')
+}
+
+}
