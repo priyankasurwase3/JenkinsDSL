@@ -5,10 +5,14 @@ cpsScm {
  git {
   remote{
    url('https://github.com/priyankasurwase3/JenkinsDSL.git')
-  
   }
   branch('feature')
- }}
+ }
 }
+}
+dsl{
+lookupStrategy(SEED_JOB)
+}
+
 }
 }
