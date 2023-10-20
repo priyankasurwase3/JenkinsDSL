@@ -5,13 +5,17 @@ scm{
  git{
   remote{
    url('https://github.com/priyankasurwase3/simple-java-maven-app.git')
-}
+    }
 branch('master')
-}
+   }
 }
 maven {
-goals('package')
+goals('-B -DskipTests clean package')
 mavenInstallation('Maven')
-}
-}
+ }
+maven {
+goals('test')
+mavenInstallation('Maven')
+ }
+ }
 }
