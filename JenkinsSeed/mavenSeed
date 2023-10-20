@@ -1,0 +1,12 @@
+job('mavenJob'){
+description ('This is maven seed job')
+steps {
+scm{
+ git{
+  remote{
+   url('https://github.com/priyankasurwase3/simple-java-maven-app.git')
+}
+}
+}
+}
+}
