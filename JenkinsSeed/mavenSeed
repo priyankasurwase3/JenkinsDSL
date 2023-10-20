@@ -23,6 +23,9 @@ shell('''
 echo ************Deploying JAR************** 
 java -jar C:/ProgramData/Jenkins/.jenkins/workspace/mavenJob/target/my-app-1.0-SNAPSHOT.jar
 ''') // Specifies the goals to execute including other command line options.
-
  }
+publishers {
+        archiveArtifacts('/target/*.jar')  // Adds post-build actions to the job.
+        archiveJunit('**/target/surefire-reports/*.xml')
+    }
 }
