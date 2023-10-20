@@ -21,7 +21,7 @@ mavenInstallation('Maven') // Specifies the Maven installation for executing thi
  }
 shell(''' //adding multiline shell script  
 echo ************Deploying JAR************** 
-java -jar C:\ProgramData\Jenkins\.jenkins\workspace\mavenJob\target\my-app-1.0-SNAPSHOT.jar
+java -jar C:/ProgramData/Jenkins/.jenkins/workspace/mavenJob/target/my-app-1.0-SNAPSHOT.jar
 ''')
  }
 }
