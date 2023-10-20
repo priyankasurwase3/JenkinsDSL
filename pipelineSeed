@@ -7,11 +7,9 @@ cpsScm {
    url('https://github.com/priyankasurwase3/JenkinsDSL.git')
   }
   branch('feature')
+  scriptPath('e2edeploy.groovy')
  }
 }
 }
-
-scriptPath('e2edeploy.groovy')
-
 }
 }
