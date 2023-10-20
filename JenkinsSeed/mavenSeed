@@ -6,6 +6,7 @@ scm{
   remote{
    url('https://github.com/priyankasurwase3/simple-java-maven-app.git')
 }
+branch('develop')
 }
 }
 }
