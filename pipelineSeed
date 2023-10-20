@@ -10,9 +10,8 @@ cpsScm {
  }
 }
 }
-dsl{
-lookupStrategy(SEED_JOB)
-}
+
+scriptPath('e2edeploy.groovy)
 
 }
 }
