@@ -9,5 +9,9 @@ scm{
 branch('master')
 }
 }
+maven {
+goals('package')
+mavenInstallation('Maven')
+}
 }
 }
