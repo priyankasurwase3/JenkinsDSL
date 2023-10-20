@@ -11,7 +11,7 @@ cpsScm {
 }
 }
 
-scriptPath('e2edeploy.groovy)
+scriptPath('e2edeploy.groovy')
 
 }
 }
