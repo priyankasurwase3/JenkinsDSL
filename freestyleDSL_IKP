@@ -35,5 +35,6 @@ external('testSeed.groovy')      //Reads Job DSL scripts from the job's workspac
 lookupStrategy('SEED_JOB')   //Chooses the lookup strategy for relative job names. Must be either 'JENKINS_ROOT' (default) or 'SEED_JOB'.
 
 }
+
 }
 }
