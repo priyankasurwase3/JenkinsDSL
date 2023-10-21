@@ -1,8 +1,8 @@
 job('nodejs job'){
 description('This is a node JS groovy seed')
 scm {
- remote{
- git {
+ git{
+ remote {
   url('https://github.com/wardviaene/docker-demo.git')
  }
 }
