@@ -1,0 +1,15 @@
+job('nodejs job'){
+description('This is a node JS groovy seed')
+scm {
+ git {
+  url('https://github.com/wardviaene/jenkins-course.git')
+ }
+}
+wrappers {
+        nodejs('NodeJS')   // this is the name of the NodeJS installation in 
+                         // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
+    }
+steps {
+        shell("npm install")
+    }
+}
