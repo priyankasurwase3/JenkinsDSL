@@ -14,7 +14,7 @@ wrappers {
 steps {
        // shell("npm install")
         dockerBuildAndPublish {
-            repositoryName('surwpri03')
+            repositoryName('surwpri03/docker-nodejs-demo')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker')
             forcePull(false)
