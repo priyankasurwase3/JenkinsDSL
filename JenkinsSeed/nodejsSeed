@@ -3,7 +3,7 @@ description('This is a node JS groovy seed')
 scm {
  remote{
  git {
-  url('https://github.com/wardviaene/jenkins-course.git')
+  url('https://github.com/wardviaene/docker-demo.git')
  }
 }
 }
