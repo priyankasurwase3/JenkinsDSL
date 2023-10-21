@@ -4,8 +4,8 @@ scm {
  git{
  remote {
   url('https://github.com/wardviaene/docker-demo.git')
+  }
  }
-}
 }
 wrappers {
         nodejs('NodeJS')   // this is the name of the NodeJS installation in 
@@ -13,5 +13,14 @@ wrappers {
     }
 steps {
         shell("npm install")
+        dockerBuildAndPublish {
+            repositoryName('surwpri03')
+            tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
+            registryCredentials('docker')
+            forcePull(false)
+            createFingerprints(false)
+            skipDecorate()
+        }
     }
+
 }
