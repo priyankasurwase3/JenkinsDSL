@@ -15,7 +15,7 @@ steps {
         shell("npm install")
         dockerBuildAndPublish {
             repositoryName('surwpri03')
-            tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
+            tag('${GIT_REVISION,length=7}')
             registryCredentials('docker')
             forcePull(false)
             createFingerprints(false)
