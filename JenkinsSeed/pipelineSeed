@@ -1,4 +1,4 @@
-pipelineJob('e2e-pipeline'){
+pipelineJob('DSLpipeline'){
 definition {
 cpsScm {
  scm{
@@ -6,8 +6,8 @@ cpsScm {
   remote{
    url('https://github.com/priyankasurwase3/JenkinsDSL.git')
   }
-  branch('feature')
-  scriptPath('e2edeploy.groovy')
+  branch('develop')
+  scriptPath('DSL.groovy')
  }
 }
 }
