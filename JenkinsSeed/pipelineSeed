@@ -1,15 +1,15 @@
 pipelineJob('DSLpipeline'){
 definition {
-cpsScm {
+cpsScm { 
  scm{
  git {
   remote{
    url('https://github.com/priyankasurwase3/JenkinsDSL.git')
-  }
+        }
   branch('develop')
   scriptPath('Jenkinsfiles/DSL.groovy')
+    }
+   }
+  }
  }
-}
-}
-}
 }
