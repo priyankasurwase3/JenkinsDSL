@@ -7,7 +7,7 @@ cpsScm {
    url('https://github.com/priyankasurwase3/JenkinsDSL.git')
   }
   branch('develop')
-  scriptPath('DSL.groovy')
+  scriptPath('Jenkinsfiles/DSL.groovy')
  }
 }
 }
